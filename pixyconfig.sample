@@ -1,0 +1,3 @@
+[auth]
+username = <username>
+proxy = <ip>:<port> 

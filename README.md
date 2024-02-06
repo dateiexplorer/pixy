@@ -3,13 +3,16 @@
 Pixy is a helper command line tool to use all your lovely pip commands from
 behind a proxy.
 
+> Warning: This repository is a PoC and is not intended to work properly in
+> all environments.
+
 ## Usage
 
 To use pixy, you'll need a configuration file with the following content:
 ```
 [auth]
 username = <username>
-proxy = <proxy>
+proxy = <ip>:<port>
 ```
 
 This configuration can be stored system wide or on a per user basis.
