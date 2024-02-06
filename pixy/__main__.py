@@ -10,7 +10,10 @@ def exec_pip(username, passphrase, proxy):
            f'http://{username}:{passphrase}@{proxy}']
     cmd.extend(sys.argv[1:])
 
-    subprocess.check_call(cmd)
+    try:
+        subprocess.check_call(cmd)
+    except subprocess.CalledProcessError as e:
+        pass
 
 
 def main():
