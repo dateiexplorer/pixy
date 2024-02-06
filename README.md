@@ -1,16 +1,7 @@
 # pixy
 
-Pixy is a helper tool to use all your lovely pip commands from behind a proxy.
-
-## Installation
-
-To install the tool, simply download this repository and run the following
-command:
-```
-python setup.py install
-```
-
-This installs pixy on your system.
+Pixy is a helper command line tool to use all your lovely pip commands from
+behind a proxy.
 
 ## Usage
 
@@ -21,7 +12,7 @@ username = <username>
 proxy = <proxy>
 ```
 
-This configuration can be stored made system wide or on a per user basis.
+This configuration can be stored system wide or on a per user basis.
 The tool reads in the configuration from the following locations (least
 files will overwrite the configurations made in previous files):
 
@@ -42,3 +33,6 @@ pixy install -U pandas
 ```
 
 You'll be asked for a password if the proxy needs a user authentication.
+
+> Note: pixy supports pips isolated build environments by settings the
+> `PIP_PROXY` environment variable in a subprocess.

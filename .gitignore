@@ -1,6 +1,16 @@
-.vscode/*
+.vscode/
+
 __pycache__/
+*.__pycache__
+*.egg-info/
+
+.venv/
+venv/
+.env/
+env/
+
 build/
 dist/
-*.egg-info
+
+# Exclude sample file, used for testing purposes.
 .pixyconfig
